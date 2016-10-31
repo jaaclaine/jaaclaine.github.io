@@ -1,0 +1,240 @@
+body{
+  color: #868686;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background: #eee
+}
+
+.topo_about:before{
+  content: "";
+  display: block;
+  position: relative;
+  height: 100px;
+  background: url(http://leysaflores.com/wp-content/uploads/WallpaperGoldMarble_1900x1200.jpg) center fixed; 
+  background-size: cover;
+}
+
+.topo_about--name{
+  margin: 20px auto;
+  color: #333;
+  font-weight: 100;
+  font-size: 5.5vw;
+  text-align: center;
+}
+
+.topo_about--text{
+  margin: 0px auto 50px auto;
+  font-style: italic;
+  text-align: center;
+  float: none;
+}
+
+.topo_about--text a{
+  display: inline-block;
+  margin-top: 12px;
+  color: #c39e3a;
+  font-weight: bold;
+}
+
+.content_box{
+  margin: 50px auto;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.content_box--title{
+  margin: 0 0 15px 0;
+  color: #333;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+.skills_bar{
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.skills span{
+  display: block;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.skills_bar--color{
+  height: 10px;
+  min-width: 1%;
+  background:  #c39e3a;
+  border-radius: 50px;
+}
+
+.skills_bar--10{
+  max-width: 10%;
+}
+
+.skills_bar--40{
+  max-width: 40%;
+}
+
+.skills_bar--60{
+  max-width: 60%;
+}
+
+.skills_bar--80{
+  max-width: 80%;  
+}
+
+.skills_bar--90{
+  max-width: 90%;  
+}
+   
+.skills_bar--color.start{
+   animation: barAnimation cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: barAnimation cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: barAnimation cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: barAnimation cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: barAnimation cubic-bezier(0.95, 0.05, 0.795, 0.035) 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes barAnimation{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+@-webkit-keyframes barAnimation{
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.projetos_list{
+  position: relative;
+  margin: 10px auto;
+  min-height: 100px;
+  text-align: center;
+}
+
+.projetos_list:hover img{
+  opacity: .3;
+  transition: all .3s ease 0s;
+}
+
+.projetos_list--item{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+  min-height: 180px;
+  z-index: 1;
+}
+
+.projetos_list img{
+  position: relative;
+  max-width: 100%;
+  transition: all .3s ease 0s;
+}
+
+.projetos_list:hover img:hover{
+  margin: -10%;
+  max-width: 120%;
+  opacity: 1;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+
+.projetos_list--item:hover{ z-index: 99;}
+
+.xp_item{
+  padding: 15px;
+}
+
+.xp_item--work{
+  position: relative;
+  margin: 25px 0 0 70px;
+  border-left: 5px solid  #c39e3a;
+}
+
+.xp_item--work:nth-of-type(2),
+.xp_item--work:nth-of-type(3){margin-top: 15px;}
+
+
+.xp_item--work:before{ left: -70px;}
+.xp_item--work:after{ content: "\f00c"; left: -100px;}
+
+.xp_item--study{
+  position: relative;
+  margin: 0 70px 15px 0;
+  text-align: right;
+  border-right: 5px solid  #c39e3a;
+}
+
+.xp_item--study:before{  right: -70px;}
+.xp_item--study:after{ content: "\f19d"; right: -100px;}
+
+.xp_item--study:before,
+.xp_item--work:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 1px;
+  background: #c39e3a;
+}
+
+.xp_item--study:after,
+.xp_item--work:after{
+  display: block;
+  position: absolute;
+  top: calc(50% - 12px);
+  width: 20px;
+  color: #c39e3a;
+  font-family: FontAwesome;
+}
+
+.xp_item--study b,
+.xp_item--work b{
+  display: block;
+  color: #000;
+  font-weight: 300;
+}
+
+@media (max-width: 991px){ 
+  .xp_item--study,
+  .xp_item--work{
+    margin: 0;
+    padding: 0 45px 0 20px;
+    text-align: left;
+    border: none;
+  }
+  .xp_item--study:before,
+  .xp_item--work:before{display: none;}
+  
+  .xp_item--study:after,
+  .xp_item--work:after{
+    left: -20px !important;
+    font-size: 20px;
+  }
+}
