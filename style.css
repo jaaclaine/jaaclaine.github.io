@@ -18,6 +18,8 @@ img{max-width: 100%; width: 100%;}
   clear: both;
 }
 
+/* HEADER
+------------------------*/
 header{
   position: fixed !important;
   left: 0;
@@ -71,14 +73,14 @@ header{
 }
 
 @-webkit-keyframes bgAnim {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 @keyframes bgAnim { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .header-menu a{
@@ -89,17 +91,19 @@ header{
 }
 
 @media screen and (max-width: 991px) {
-    header{
-      position: relative !important;
-      float: none !important;
-      height: auto;
-    }
-    .header-box{
-      margin: 30px auto;
-      text-align: center;
-    }
+  header{
+    position: relative !important;
+    float: none !important;
+    height: auto;
+  }
+  .header-box{
+    margin: 30px auto;
+    text-align: center;
+  }
 }
 
+/* CONTENT
+------------------------*/
 .content{
   min-height: 100vh;
   background: #38354b;
@@ -117,6 +121,8 @@ header{
   font-family: 'Kalam', cursive;
 }
 
+/* SKILL
+------------------------*/
 .content-skill span{
   display: block;
   padding: 5px 0;
@@ -130,6 +136,8 @@ header{
   font-size: 10px;
 }
 
+/* EXPERIENCE
+------------------------*/
 .experience-item{
   position: relative;
   padding: 20px;
@@ -188,6 +196,10 @@ header{
   .experience-item:after{display: none;}
 }
 
+/* PORTFOLIO
+------------------------*/
 .content-portfolio .col-lg-3{padding: 5px;}
-
 .content-portfolio .col-lg-3 a{cursor: crosshair;}
+
+.content-portfolio img{transition: all .4s linear;}
+.content-portfolio img:hover{filter: grayscale(100%); opacity: .7;}
