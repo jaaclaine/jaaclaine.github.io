@@ -198,8 +198,8 @@ header{
 
 /* PORTFOLIO
 ------------------------*/
-.content-portfolio .col-lg-3{padding: 5px;}
-.content-portfolio .col-lg-3 a{cursor: crosshair;}
+.content-portfolio .col-lg-4{padding: 5px;}
+.content-portfolio .col-lg-4 a{cursor: crosshair;}
 
 .content-portfolio img{transition: all .4s linear;}
 .content-portfolio img:hover{filter: grayscale(100%); opacity: .7;}
